@@ -226,8 +226,8 @@ xgallery
   width: 100%;
 }
 .cd-gallery li {
-  margin-bottom: 1.6em;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  /* margin-bottom: 1.6em; */
+  /* box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); */
   display: none;
 }
 .cd-gallery li.gap {
@@ -257,8 +257,8 @@ xgallery
     clear: both;
   }
   .cd-gallery li {
-    width: 48%;
-    margin-bottom: 2em;
+    width: 100%;
+    /* margin-bottom: 2em; */
   }
 }
 @media only screen and (min-width: 1170px) {
@@ -270,7 +270,7 @@ xgallery
     transition: width 0.3s;
   }
   .cd-gallery li {
-    width: 23%;
+    /* width: 23%; */
   }
   .cd-gallery.filter-is-visible {
     /* reduce width when filter is visible */
