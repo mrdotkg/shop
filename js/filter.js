@@ -70,7 +70,7 @@ jQuery(document).ready(function($){
 	*************************************/
 
 	buttonFilter.init();
-	$('.cd-gallery ul').mixItUp({
+	$('.cd-gallery').mixItUp({
 	    controls: {
 	    	enable: false
 	    },
@@ -114,10 +114,10 @@ jQuery(document).ready(function($){
 		          		$matching = $matching.not(this);
 		        	}
 	      		});
-	      		$('.cd-gallery ul').mixItUp('filter', $matching);
+	      		$('.cd-gallery').mixItUp('filter', $matching);
 	    	} else {
 	      		// resets the filter to show all item if input is empty
-	      		$('.cd-gallery ul').mixItUp('filter', 'all');
+	      		$('.cd-gallery').mixItUp('filter', 'all');
 	    	}
 	  	}, 200 );
 	});
@@ -139,7 +139,7 @@ var buttonFilter = {
     	var self = this; // As a best practice, in each method we will asign "this" to the variable "self" so that it remains scope-agnostic. We will use it to refer to the parent "buttonFilter" object so that we can share methods and properties between all parts of the object.
     
     	self.$filters = $('.cd-main-content');
-    	self.$container = $('.cd-gallery ul');
+    	self.$container = $('.cd-gallery');
     
 	    self.$filters.find('.cd-filters').each(function(){
 	      	var $this = $(this);

@@ -236,7 +236,7 @@ xgallery
   height: 0;
   display: inline-block;
 }
-.cd-gallery img {
+.cd-gallery li {
   display: block;
   width: 100%;
 }
@@ -248,10 +248,10 @@ xgallery
   .cd-gallery {
     padding: 40px 3%;
   }
-  .cd-gallery ul {
+  .cd-gallery {
     text-align: justify;
   }
-  .cd-gallery ul:after {
+  .cd-gallery:after {
     content: "";
     display: table;
     clear: both;
