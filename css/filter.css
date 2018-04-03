@@ -376,7 +376,7 @@ xfilter
   color: transparent;
   white-space: nowrap;
   background: transparent url("../img/cd-icon-filter.svg") no-repeat center center;
-  z-index: 3;
+  z-index: 1;
 }
 .cd-filter-trigger.filter-is-visible {
   pointer-events: none;
