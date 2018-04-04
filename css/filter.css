@@ -323,7 +323,7 @@ xfilter
 .cd-filter form {
   padding: 70px 20px;
 }
-.cd-filter .cd-close {
+.cd-filter .cd-close-filter {
   position: absolute;
   top: 0;
   right: 0;
@@ -340,7 +340,7 @@ xfilter
   transition: opacity 0.3s;
   z-index: 3;
 }
-.no-touch .cd-filter .cd-close:hover {
+.no-touch .cd-filter .cd-close-filter:hover {
   background: #32255f;
 }
 .cd-filter.filter-is-visible {
@@ -351,7 +351,7 @@ xfilter
   transform: translateX(0);
   box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
 }
-.cd-filter.filter-is-visible .cd-close {
+.cd-filter.filter-is-visible .cd-close-filter {
   opacity: 1;
 }
 @media only screen and (min-width: 1170px) {

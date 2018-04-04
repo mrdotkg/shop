@@ -11,11 +11,14 @@
 	<link rel="stylesheet" href="css/nav.css"> <!-- nav style -->
 	<link rel="stylesheet" href="css/hero-slider.css"> <!-- hero-slider style -->
 	<link rel="stylesheet" href="css/filter.css"> <!-- filter style -->
-	<link rel="stylesheet" href="css/item.css"> <!-- filter style -->
+	<link rel="stylesheet" href="css/item.css"> <!-- item style -->
+	<link rel="stylesheet" href="css/interactive-cart.css"> <!-- interactive-cart style -->
+	<!-- quick-view style --> -->
+	<!-- <!-- <link rel="stylesheet" href="css/quick-view.css">  -->
 		
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
-	<title>SHOP | GADGETS</title>
+	<title> SHOP | GADGETS </title>
 </head>
 <body>
 <header class="cd-auto-hide-header">
@@ -41,6 +44,7 @@
 
 <section class="cd-hero js-cd-hero js-cd-autoplay">
 	<ul class="cd-hero__slider">
+
 		<li class="cd-hero__slide cd-hero__slide--selected js-cd-slide">
 			<div class="cd-hero__content cd-hero__content--full-width">
 				<h2>Hero slider</h2>
@@ -128,6 +132,7 @@
 	
 <main class="cd-main-content">
 	
+	<!--filter  -->
 	<div class="cd-tab-filter-wrapper">
 		<div class="cd-tab-filter">
 			<ul class="cd-filters">
@@ -164,13 +169,13 @@
 								
 								<div class="size" data-type="select">
 									<ul>
-										<li class="small active">Small</li>
+										<li class="small active">mall</li>
 										<li class="medium">Medium</li>
 										<li class="large">Large</li>
 									</ul>
 								</div>
 			
-								<button class="add-to-cart">
+								<button class="cd-add-to-cart add-to-cart" data-price="9.99">
 									<em>Add to Cart</em>
 									<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
 										<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
@@ -214,7 +219,7 @@
 									</ul>
 								</div>
 			
-								<button class="add-to-cart">
+								<button class="cd-add-to-cart add-to-cart" data-price="9.99">
 									<em>Add to Cart</em>
 									<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
 										<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
@@ -258,7 +263,7 @@
 									</ul>
 								</div>
 			
-								<button class="add-to-cart">
+								<button class="cd-add-to-cart add-to-cart" data-price="9.99">
 									<em>Add to Cart</em>
 									<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
 										<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
@@ -302,7 +307,7 @@
 									</ul>
 								</div>
 			
-								<button class="add-to-cart">
+								<button class="cd-add-to-cart add-to-cart" data-price="9.99">
 									<em>Add to Cart</em>
 									<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
 										<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
@@ -346,7 +351,7 @@
 									</ul>
 								</div>
 			
-								<button class="add-to-cart">
+								<button class="cd-add-to-cart add-to-cart" data-price="9.99">
 									<em>Add to Cart</em>
 									<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
 										<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
@@ -390,7 +395,7 @@
 									</ul>
 								</div>
 			
-								<button class="add-to-cart">
+								<button class="cd-add-to-cart add-to-cart" data-price="9.99">
 									<em>Add to Cart</em>
 									<svg x="0px" y="0px" width="32px" height="32px" viewBox="0 0 32 32">
 										<path stroke-dasharray="19.79 19.79" stroke-dashoffset="19.79" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" d="M9,17l3.9,3.9c0.1,0.1,0.2,0.1,0.3,0L23,11"/>
@@ -479,21 +484,53 @@
 			</div> <!-- cd-filter-block -->
 		</form>
 
-		<a href="#0" class="cd-close">Close</a>
+		<a href="#0" class="cd-close-filter">Close</a>
 	</div> <!-- cd-filter -->
 
 	<a href="#0" class="cd-filter-trigger">Filters</a>
 		
 </main> <!-- .cd-main-content -->
 	
+<!-- cart -->
+<div class="cd-cart-container empty">
+	<a href="#0" class="cd-cart-trigger">
+		Cart
+		<ul class="count"> <!-- cart items count -->
+			<li>0</li>
+			<li>0</li>
+		</ul> <!-- .count -->
+	</a>
+
+	<div class="cd-cart">
+		<div class="wrapper">
+			<header>
+				<h2>Cart</h2>
+				<span class="undo">Item removed. <a href="#0">Undo</a></span>
+			</header>
+			
+			<div class="body">
+				<ul>
+					<!-- products added to the cart will be inserted here using JavaScript -->
+				</ul>
+			</div>
+
+			<footer>
+				<a href="#0" class="checkout btn"><em>Checkout - $<span>0</span></em></a>
+			</footer>
+		</div>
+	</div> <!-- .cd-cart -->
+</div> <!-- cd-cart-container -->
+	
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-<script>
-	if( !window.jQuery ) document.write('<script src="js/jquery-3.0.0.min.js"><\/script>');
-</script>
 <script src="js/jquery.mixitup.min.js"></script>
-<script src="js/nav.js"></script> <!-- Resource jQuery -->
-<script src="js/hero-slider.js"></script> <!-- Resource jQuery -->
-<script src="js/filter.js"></script> <!-- Resource jQuery -->
-<script src="js/item.js"></script> <!-- Resource jQuery -->
+<script src="js/velocity.min.js"></script>
+
+<script src="js/nav.js"></script> <!-- nav jQuery -->
+<script src="js/hero-slider.js"></script> <!-- hero-slider jQuery -->
+<script src="js/filter.js"></script> <!-- filter jQuery -->
+<script src="js/item.js"></script> <!-- item jQuery -->
+<script src="js/interactive-cart.js"></script> <!-- interactive-cart jQuery -->
+<!-- quick-view jQuery -->
+<!-- <script src="js/quick-view.js"></script>  -->
 </body>
 </html>

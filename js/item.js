@@ -1,6 +1,5 @@
 jQuery(document).ready(function(){
 	var productCustomization = $('.cd-customization'),
-		cart = $('.cd-cart'),
 		animating = false;
 	
 	initCustomization(productCustomization);
@@ -50,7 +49,6 @@ jQuery(document).ready(function(){
 						'stroke-dashoffset':0
 					}, 300, function(){
 						setTimeout(function(){
-							updateCart();
 							addToCartBtn.removeClass('is-added').find('em').on('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
 								//wait for the end of the transition to reset the check icon
 								addToCartBtn.find('path').eq(0).css('stroke-dashoffset', '19.79');
@@ -90,14 +88,5 @@ jQuery(document).ready(function(){
 
 	function deactivateCustomization() {
 		productCustomization.parent('.cd-single-item').removeClass('hover').end().find('[data-type="select"]').removeClass('is-open');
-	}
-
-	function updateCart() {
-		//show counter if this is the first item added to the cart
-		( !cart.hasClass('items-added') ) && cart.addClass('items-added'); 
-
-		var cartItems = cart.find('span'),
-			text = parseInt(cartItems.text()) + 1;
-		cartItems.text(text);
 	}
 });
