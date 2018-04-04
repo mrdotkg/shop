@@ -280,6 +280,7 @@ Main Components
   height: 72px;
   line-height: 72px;
   margin-right: 72px;
+  margin-left: -20px;
   background: #2c97de;
   color: rgba(255, 255, 255, 0);
   text-align: center;
