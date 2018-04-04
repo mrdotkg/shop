@@ -162,6 +162,7 @@ Product Customization
   float: left;
 }
 .cd-customization .color, .cd-customization .size, .cd-customization .add-to-cart {
+  outline: none;
   height: 34px;
   border-radius: 3px;
   position: relative;
